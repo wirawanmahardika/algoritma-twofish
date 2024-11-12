@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twofish Algorithm</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-sky-100 p-6">
+    <div class="flex w-full justify-center">
+        <h1 class="font-bold text-4xl">Algoritma Twofish</h1>
+    </div>
+
+    <div class="flex flex-col w-2/5 mx-auto mt-6">
+        <label class="font-semibold text-xl">Kunci</label>
+        <input id="kunci" type="text"
+            class="outline-none border-2 border-black focus-within:border-sky-500 rounded px-4 py-1">
+    </div>
+
+    <div class="flex mt-10">
+        <div class="flex flex-col w-2/5 mx-auto mt-6">
+            <h2 class="font-semibold text-2xl text-center">Enkripsi</h2>
+
+            <label class="font-semibold text-xl">Plain Text</label>
+            <input id="plainText" type="text"
+                class="outline-none border-2 border-black focus-within:border-sky-500 rounded px-4 py-1">
+
+            <button id="encrypt" class="px-4 py-1 rounded bg-black text-white w-fit mx-auto mt-5">Enkripsi</button>
+
+            <label class="font-semibold text-xl">Hasil Enkripsi</label>
+            <textarea disabled id="hasilEnc" rows="3"
+                class="outline-none border-2 border-black focus-within:border-sky-500 rounded px-4 py-1"></textarea>
+        </div>
+
+        <div class="h-80 w-1 bg-black border-0"></div>
+
+        <div class="flex flex-col w-2/5 mx-auto mt-6">
+            <h2 class="font-semibold text-2xl text-center">Dekripsi</h2>
+
+            <label class="font-semibold text-xl">Cipher Text</label>
+            <input id="cipherText" type="text"
+                class="outline-none border-2 border-black focus-within:border-sky-500 rounded px-4 py-1">
+
+            <button id="decrypt" class="px-4 py-1 rounded bg-black text-white w-fit mx-auto mt-5">Dekripsi</button>
+
+            <label class="font-semibold text-xl">Hasil Dekripsi</label>
+            <textarea disabled id="hasilDec" rows="3"
+                class="outline-none border-2 border-black focus-within:border-sky-500 rounded px-4 py-1"></textarea>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
